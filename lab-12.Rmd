@@ -5,6 +5,8 @@ date: "20250430"
 output: github_document
 ---
 
+## This lab is mainly for replacing a porfolio piece, so I will be finishing the lab while giving suggestions on how to refine!
+
 ### Load packages and data
 
 ```{r load-packages, message=FALSE}
@@ -91,6 +93,8 @@ Alternative hypothesis: H1: u ≠ 7.43
 According to the table, there is no sample with a mean less than 7.25.
 According to the output, the observed mean birth weight of babies born to White mothers in the sample was 7.25 pounds. To test the hypothesis, we generated 150 bootstrap samples of the data. The resulting p-value was .002, which suggests we can reject the null hypothesis and conclude that the observed value is significantly lower than the historical weight of 7.43 pounds. 
 
+My suggestions for Exercise 4 is to break this into more seperate sections perhaps? The instructions is clear, but maybe we can do 4.1, 4.2 and 4.3 for the steps, including listing the hypothesis and choose what test to run, and then the plotting, and then the p value and report. 
+
 ### Exercise 5
 
 ```{r habit and weight}
@@ -145,6 +149,8 @@ bootstrap_clean %>%
 ```
 
 The bootstrapping showed a slightly different value for CI than the sample, but it still indicates a statistically significant difference between the two groups.
+
+This part looks great and I do not have much suggestions! In terms of Exercise 10, I think it can be more clear on what way you want us to calculate the CI, since there are functions/ equations that can directly generate the CI, and there are codes that will calculate step by step (i guess this depends on your goal). 
 
 ### Exercise 11
 
@@ -214,3 +220,6 @@ ci
 
 ```
 Based on 1500 bootstrap samples, the 95% CI is (-.04, 0.04).Since the interval includes 0, we can conclude that there no statistically significant difference in low birth weight rates between the two age groups of mothers.
+
+I really enjoyed how this part is constructed! I think it can also be interesting if you ask one more question about exploring the dataset with variables students might be interested in? 
+Additionally, for the whole lab, I think the goal is to get better idea how to do bootstrapping, so some Exercise can be more specifically targeted at using bootstrapping? I am not sure if this makes sense, but I really enjoyed this lab cause I have learned a lot. 
